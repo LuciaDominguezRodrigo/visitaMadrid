@@ -227,7 +227,7 @@
 
     <section id="postal" aria-labelledby="postal-title">
         <h2 id="postal-title">Envía una postal virtual</h2>
-        <form aria-describedby="form-desc">
+        <form action="/enviar" method="POST" enctype="multipart/form-data" aria-describedby="form-desc">
             <p id="form-desc">Simula el envío de una postal desde los Jardines del Campo del Moro.</p>
 
             <label for="nombre">Tu nombre</label>
@@ -236,18 +236,21 @@
             <label for="email">Correo del destinatario</label>
             <input type="email" id="email" name="email" required aria-required="true" />
 
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" required aria-required="true" />
+
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
             <label for="imagen">Imagen (opcional)</label>
             <input type="file" id="imagen" name="imagen" accept="image/*" />
 
-            <label for="fecha">Fecha de envío</label>
-            <input type="date" id="fecha" name="fecha" required aria-required="true" aria-label="Selecciona la fecha de envío" />
-
             <button type="submit">Enviar postal</button>
         </form>
     </section>
+
+
+
 </main>
 
 <footer role="contentinfo">
@@ -267,6 +270,6 @@
     function toggleContrast() {
         document.body.classList.toggle("high-contrast");
     }
+    
 </script>
 </body>
-</html>
