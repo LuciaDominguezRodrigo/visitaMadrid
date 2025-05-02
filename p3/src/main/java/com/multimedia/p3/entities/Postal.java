@@ -26,12 +26,12 @@ public class Postal {
     private LocalDate date;
 
     @Lob
-    private Blob photo;
+    private byte[] photo;
 
     public Postal() {
     }
 
-    public Postal(Long id, Blob photo, LocalDate date, String description, String location) {
+    public Postal(Long id, byte[] photo, LocalDate date, String description, String location) {
         this.id = id;
         this.photo = photo;
         this.date = date;
