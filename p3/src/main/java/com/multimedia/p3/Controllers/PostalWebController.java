@@ -33,8 +33,8 @@ public class PostalWebController {
             @RequestParam("mensaje") String mensaje,
             @RequestParam("email") String remitente,
             @RequestParam("titulo") String titulo,
-            @RequestParam("imagen") MultipartFile imagen,
-            RedirectAttributes redirectAttributes) throws IOException {
+            @RequestParam("imagen") MultipartFile imagen
+            ) throws IOException {
 
         Postal postal = new Postal();
         postal.setDestinatario(destinatario);

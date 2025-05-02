@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -227,7 +228,7 @@
 
     <section id="postal" aria-labelledby="postal-title">
         <h2 id="postal-title">Envía una postal virtual</h2>
-        <form action="/enviar" method="POST" enctype="multipart/form-data" aria-describedby="form-desc">
+        <form id="postalForm" action="/enviar" method="POST" enctype="multipart/form-data" aria-describedby="form-desc">
             <p id="form-desc">Simula el envío de una postal desde los Jardines del Campo del Moro.</p>
 
             <label for="nombre">Tu nombre</label>
@@ -270,6 +271,24 @@
     function toggleContrast() {
         document.body.classList.toggle("high-contrast");
     }
-    
+
+    document.getElementById("postalForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); 
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        const response = await fetch("/enviar", {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.redirected) {
+            alert("¡Postal enviada con éxito!");
+            window.location.href = response.url;
+        } else {
+            alert("Hubo un error al enviar la postal.");
+        }
+    });
 </script>
 </body>
