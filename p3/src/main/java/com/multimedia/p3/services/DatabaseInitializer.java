@@ -16,6 +16,7 @@ public class DatabaseInitializer {
     @Autowired
     private PostalService postalService;
 
+    /*
     @PostConstruct
     public void init() throws IOException {
         // Cargar imagen de recurso
@@ -38,4 +39,5 @@ public class DatabaseInitializer {
 
         System.out.println("Base de datos inicializada con postales de prueba.");
     }
+    */
 }
