@@ -17,11 +17,11 @@ public class Postal {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String location;
+    private String name;
 
     private String title;
 
-    private String description;
+    private String message;
 
     private LocalDate date;
 
@@ -31,11 +31,12 @@ public class Postal {
     public Postal() {
     }
 
-    public Postal(Long id, byte[] photo, LocalDate date, String description, String location) {
+    public Postal(Long id, String name, String title, String description, LocalDate date, byte[] photo) {
         this.id = id;
-        this.photo = photo;
+        this.name = name;
+        this.title = title;
+        this.message = description;
         this.date = date;
-        this.description = description;
-        this.location = location;
+        this.photo = photo;
     }
 }

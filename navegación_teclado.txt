@@ -1,0 +1,59 @@
+Acciones con Teclado para Navegar en la Página:
+
+Navegar por enlaces de la barra de navegación:
+
+	Tab: Navegar entre los enlaces en el encabezado (Descripción, Galería, Enviar postal).
+
+	Enter: Seleccionar un enlace para ir a la sección correspondiente.
+
+Botones de accesibilidad:
+
+	Tab: Navegar hacia los botones de accesibilidad (Fuente Disléxica, Alto Contraste).
+
+	Enter: Activar el botón seleccionado (cambiar la fuente o el contraste de la página).
+
+Formulario:
+
+	Tab: Navegar entre los campos del formulario:
+
+	Shift + Tab: Volver a los campos anteriores en el formulario.
+
+	Enter: Enviar el formulario cuando se selecciona el botón de "Enviar postal".
+	
+
+Interacción con el campo de fecha (si se agrega):
+
+	Tab: Navegar hasta el campo de fecha y luego utilizar el selector de fecha si el navegador lo soporta.
+
+	Shift + Tab: Volver al campo anterior.
+
+	Enter: Seleccionar una fecha si se utiliza un calendario o el campo de texto para fecha.
+	
+
+Navegación en los elementos multimedia:
+
+	Tab: Navegar hasta las imágenes o el video en la sección "Galería".
+
+	Enter: Si el video es interactivo, reproducirlo; si la imagen es interactiva, abrirla en una vista más grande.
+
+
+Botón "Enviar postal":
+
+	Tab: Navegar hasta el botón "Enviar postal".
+
+	Enter: Activar el botón para enviar el formulario con los datos proporcionados.
+
+
+Interacción con el contenido de la página:
+
+	Tab: Navegar por todo el contenido interactivo (enlaces, botones, formularios).
+
+	Shift + Tab: Volver hacia atrás a través de los elementos interactivos.
+
+
+Menú de opciones de accesibilidad:
+
+	Tab: Navegar entre los botones de accesibilidad (Fuente Disléxica, Alto Contraste).
+
+	Enter: Activar los botones de accesibilidad.
+
