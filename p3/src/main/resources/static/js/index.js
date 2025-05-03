@@ -20,8 +20,7 @@ document.getElementById("postalForm").addEventListener("submit", async function(
     const status = document.getElementById("statusMessage");
 
     if (response.redirected) {
-        status.textContent = "¡Postal enviada con éxito!";
-        alert(status);
+        alert("¡Postal enviada con éxito!");
         window.location.href = response.url;
     } else {
         status.textContent = "Hubo un error al enviar la postal.";
