@@ -64,9 +64,9 @@ src/
 
 ---
 
-## 📸 Capturas
+## 📸 Video del funcionamiento
 
-🎥 [Ver video de los Jardines del Campo del Moro](https://github.com/LuciaDominguezRodrigo/visitaMadrid/blob/main/doc/Jardines%20del%20Campo%20del%20Moro.mp4)
+🎥 [Ver video en Google Drive](https://drive.google.com/file/d/1KAWdTpUlafLYf4CQmh--xnx3wKqIxURA/view?usp=sharing)
 
 
 ---
