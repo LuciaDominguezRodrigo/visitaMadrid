@@ -19,7 +19,7 @@ public class DatabaseInitializer {
     @PostConstruct
     public void init() throws IOException {
         // Cargar imagen de recurso
-        ClassPathResource imageFile = new ClassPathResource("/static/img.png");
+        ClassPathResource imageFile = new ClassPathResource("/static/images/img.png");
         InputStream inputStream = imageFile.getInputStream();
         byte[] imageBytes = inputStream.readAllBytes();
 
