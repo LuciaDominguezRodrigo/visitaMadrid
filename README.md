@@ -66,8 +66,7 @@ src/
 
 ## 📸 Capturas
 
-_Puedes añadir aquí capturas de pantalla de la página web para ilustrar mejor la experiencia del usuario._
-
+🎥 [Ver video de los Jardines del Campo del Moro](https://github.com/LuciaDominguezRodrigo/visitaMadrid/blob/main/doc/Jardines%20del%20Campo%20del%20Moro.mp4)
 
 
 ---
