@@ -21,8 +21,8 @@
 </header>
 
 <div class="access-buttons" aria-label="Opciones de accesibilidad">
-    <button onclick="toggleDyslexicFont()">Fuente Disléxica</button>
-    <button onclick="toggleContrast()">Alto Contraste</button>
+    <button onclick="toggleDyslexicFont()" aria-label="Activar fuente disléxica">Fuente Disléxica</button>
+    <button onclick="toggleContrast()" aria-label="Activar alto contraste">Alto Contraste</button>
 </div>
 
 <main role="main">
@@ -69,10 +69,9 @@
             <button type="submit">Enviar postal</button>
         </form>
     </section>
-
-
-
 </main>
+
+<div id="statusMessage" aria-live="polite"></div>
 
 <footer role="contentinfo">
     <p>&copy; 2025 Jardines del Campo del Moro - Madrid</p>
@@ -86,5 +85,7 @@
         <p>Sitio validado con cumplimiento AA de accesibilidad</p>
     </div>
 </footer>
+
 <script src="/js/index.js"></script>
 </body>
+</html>

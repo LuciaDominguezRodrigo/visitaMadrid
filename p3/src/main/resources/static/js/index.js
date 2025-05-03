@@ -17,10 +17,14 @@ document.getElementById("postalForm").addEventListener("submit", async function(
         body: formData
     });
 
+    const status = document.getElementById("statusMessage");
+
     if (response.redirected) {
-        alert("¡Postal enviada con éxito!");
+        status.textContent = "¡Postal enviada con éxito!";
+        alert(status);
         window.location.href = response.url;
     } else {
-        alert("Hubo un error al enviar la postal.");
+        status.textContent = "Hubo un error al enviar la postal.";
     }
+
 });
