@@ -64,6 +64,37 @@ src/
 
 ---
 
+
+## 💼 Cumplimiento con las pautas WCAG 2.2 Nivel AA
+
+Este sitio web cumple con las **pautas de accesibilidad WCAG 2.2 nivel AA** por las siguientes razones:
+
+### 1. Uso correcto de la semántica HTML
+- **Encabezados apropiados**: El uso de los elementos HTML semánticos como `<h1>`, `<h2>` para títulos y subtítulos asegura una estructura jerárquica adecuada.
+
+### 2. Atributos ARIA
+- Se utilizan los atributos **ARIA** correctamente, como `aria-label`, `aria-labelledby`, y `role`, para proporcionar contexto adicional a los elementos interactivos y mejorar la experiencia de usuarios con tecnologías asistivas.
+
+### 3. Texto alternativo en imágenes y videos
+- Todas las imágenes y videos tienen **atributos `alt` y `title`** que permiten que los usuarios con discapacidad visual comprendan el contenido de los medios.
+
+### 4. Contrastes de color y opciones de personalización
+- Se implementaron botones para cambiar a una **fuente disléxica** y activar un **modo de alto contraste**, lo que mejora la legibilidad y accesibilidad para los usuarios con dificultades visuales.
+
+### 5. Formularios accesibles
+- Los formularios incluyen **etiquetas `label`** y atributos como **`aria-required`**, lo que facilita su uso para usuarios con tecnologías de asistencia.
+
+### 6. Validación de HTML
+- El código HTML fue validado con el **validador W3C** para asegurar que sigue los estándares de la web.
+
+### 7. Certificación de accesibilidad
+- Se ha agregado un ícono de validación en el pie de página que indica que el sitio cumple con el **nivel AA** de accesibilidad según WCAG 2.2.
+
+### 8. Validación con herramientas externas
+- El sitio debe ser validado usando herramientas como **WAVE**, **Pa11y**, **axe DevTools**, y otros, para garantizar su accesibilidad completa. El proceso de validación debe completarse externamente.
+
+---
+
 ## 📸 Video del funcionamiento
 
 🎥 [Ver video en Google Drive](https://drive.google.com/file/d/1KAWdTpUlafLYf4CQmh--xnx3wKqIxURA/view?usp=sharing)
