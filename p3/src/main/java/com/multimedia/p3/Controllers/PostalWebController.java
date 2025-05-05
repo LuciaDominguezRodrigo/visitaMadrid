@@ -33,24 +33,31 @@ public class PostalWebController {
             @RequestParam("mensaje") String mensaje,
             @RequestParam("email") String remitente,
             @RequestParam("titulo") String titulo,
-            @RequestParam("imagen") MultipartFile imagen
-            ) throws IOException {
+            @RequestParam(value = "imagen", required = false) MultipartFile imagen,
+            @RequestParam(value = "imagenSeleccionada", required = false) String imagenSeleccionada
+    ) throws IOException {
 
         Postal postal = new Postal();
         postal.setDestinatario(destinatario);
         postal.setMensaje(mensaje);
         postal.setRemitente(remitente);
         postal.setTitulo(titulo);
+        postal.setFechaEnvio(LocalDate.now());
 
-
-        if (!imagen.isEmpty()) {
+        if (imagen != null && !imagen.isEmpty()) {
+            // Si el usuario sube una imagen, usar esa
             postal.setImagen(imagen.getBytes());
+        } else if (imagenSeleccionada != null && !imagenSeleccionada.isEmpty()) {
+            // Si selecciona una imagen predefinida, cargarla desde recursos
+            String imagePath = "static/images/" + imagenSeleccionada;
+            byte[] imageBytes;
+            imageBytes = getClass().getClassLoader().getResourceAsStream(imagePath).readAllBytes();
+            postal.setImagen(imageBytes);
         }
 
-        postal.setFechaEnvio(LocalDate.now());
         postalService.save(postal);
-
         return "redirect:/";
     }
+
 }
 

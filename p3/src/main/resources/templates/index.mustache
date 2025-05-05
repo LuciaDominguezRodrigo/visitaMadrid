@@ -33,7 +33,7 @@
 
     <section id="galeria" aria-labelledby="galeria-title">
         <h2 id="galeria-title">Galería</h2>
-        <img src="https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/recursosturisticos/infoturistica/62015739_21122009144237_adj.jpg?itok=NHv7-Rlg" alt="Vista de los Jardines del Campo del Moro con el Palacio Real al fondo" />
+        <img class="small-img" src="https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/recursosturisticos/infoturistica/62015739_21122009144237_adj.jpg?itok=NHv7-Rlg" alt="Vista de los Jardines del Campo del Moro con el Palacio Real al fondo" />
         <iframe
                 width="560"
                 height="315"
@@ -63,8 +63,25 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <label for="imagen">Imagen (opcional)</label>
-            <input type="file" id="imagen" name="imagen" accept="image/*" />
+            <input type="hidden" name="imagenSeleccionada" id="imagenSeleccionada" />
+            <fieldset>
+                <legend>Selecciona una imagen</legend>
+                <div class="image-options">
+                    <label>
+                        <input type="radio" name="imgChoice" value="imagen1.jpg" hidden>
+                        <img src="/images/img_1.png" alt="Vista 1" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="imgChoice" value="imagen2.jpg" hidden>
+                        <img src="/images/postal2.png" alt="Vista 2" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="imgChoice" value="imagen3.jpg" hidden>
+                        <img src="/images/postal3.png" alt="Vista 3" class="selectable-image">
+                    </label>
+                </div>
+            </fieldset>
+
 
             <button type="submit">Enviar postal</button>
         </form>
