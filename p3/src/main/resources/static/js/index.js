@@ -58,5 +58,31 @@ document.getElementById("postalForm").addEventListener("submit", async function 
     }
 });
 
+function leerTexto(id) {
+    const elemento = document.getElementById(id);
+    if (elemento) {
+        const texto = elemento.innerText;
+        const mensaje = new SpeechSynthesisUtterance(texto);
+        mensaje.lang = 'es-ES';
+        mensaje.rate = 1;
+        window.speechSynthesis.speak(mensaje);
+    }
+}
+
+function leerFormulario() {
+    const texto = `
+        Estás en el formulario para enviar una postal virtual.
+        Primero, escribe tu nombre.
+        Luego, introduce el correo electrónico del destinatario.
+        A continuación, pon un título para tu postal.
+        Escribe tu mensaje.
+        Por último, selecciona una imagen y pulsa en enviar postal.
+    `;
+
+    const mensaje = new SpeechSynthesisUtterance(texto);
+    mensaje.lang = 'es-ES'; // Español
+    window.speechSynthesis.speak(mensaje);
+}
+
 
 

@@ -28,7 +28,12 @@
 <main role="main">
     <section id="descripcion" aria-labelledby="desc-title">
         <h2 id="desc-title">Historia y belleza natural</h2>
-        <p>Los Jardines de Sabatini y el Campo del Moro, situados al oeste del Palacio Real de Madrid, ofrecen una vista majestuosa y única. Su nombre proviene de una tentativa musulmana de reconquistar Madrid en el siglo XII. Diseñados en el siglo XIX en estilo romántico inglés, estos jardines son ideales para pasear entre fuentes, pavos reales y naturaleza.</p>
+        <p id="texto-a-leer">Los Jardines de Sabatini y el Campo del Moro, situados al oeste del Palacio Real de Madrid, ofrecen una vista majestuosa y única. Su nombre proviene de una tentativa musulmana de reconquistar Madrid en el siglo XII. Diseñados en el siglo XIX en estilo romántico inglés, estos jardines son ideales para pasear entre fuentes, pavos reales y naturaleza.</p>
+        <div class="lectura-botones">
+            <button onclick="leerTexto('texto-a-leer')" aria-label="Escuchar descripción">Escuchar</button>
+            <button onclick="window.speechSynthesis.cancel()" aria-label="Detener lectura">Detener</button>
+        </div>
+
     </section>
 
     <section id="galeria" aria-labelledby="galeria-title">
@@ -48,6 +53,10 @@
 
     <section id="postal" aria-labelledby="postal-title">
         <h2 id="postal-title">Envía una postal virtual</h2>
+        <div class="lectura-botones">
+            <button onclick="leerFormulario()" aria-label="Activar lectura del formulario">Leer instrucciones</button>
+            <button onclick="window.speechSynthesis.cancel()" aria-label="Detener lectura">Detener</button>
+        </div>
         <form id="postalForm" action="/enviar" method="POST" enctype="multipart/form-data" aria-describedby="form-desc">
             <p id="form-desc">Simula el envío de una postal desde los Jardines del Campo del Moro.</p>
 

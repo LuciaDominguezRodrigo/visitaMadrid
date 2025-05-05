@@ -201,6 +201,12 @@ footer {
     margin: 1rem auto;
 }
 
+.lectura-botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
 .selectable-image:hover {
     transform: scale(1.05);
