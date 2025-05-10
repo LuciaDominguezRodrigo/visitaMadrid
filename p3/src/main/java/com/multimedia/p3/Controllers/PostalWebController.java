@@ -24,7 +24,7 @@ public class PostalWebController {
     // Página inicial
     @GetMapping("/")
     public String index() {
-        return "/index";
+        return "index";
     }
 
     @PostMapping("/enviar")
