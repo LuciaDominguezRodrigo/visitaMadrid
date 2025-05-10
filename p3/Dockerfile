@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copia el archivo JAR desde tu máquina local al contenedor
-COPY target/p3-0.0.1-SNAPSHOT.jar app.jar
+COPY p3-0.0.1-SNAPSHOT.jar app.jar
 
 # Copia las plantillas y recursos
 COPY src/main/resources /app/src/main/resources
