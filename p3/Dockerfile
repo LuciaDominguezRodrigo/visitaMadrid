@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copia el archivo .jar desde la ruta correcta en tu sistema local al contenedor
-COPY target/p3-0.0.1-SNAPSHOT.jar app.jar
+COPY p3-0.0.1-SNAPSHOT.jar app.jar
 
 # Expone el puerto (Render usará la variable PORT)
 EXPOSE 8080
