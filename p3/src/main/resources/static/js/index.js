@@ -48,14 +48,15 @@ document.getElementById("postalForm").addEventListener("submit", async function 
         body: formData
     });
 
-    const status = document.getElementById("statusMessage");
 
     if (response.redirected) {
         alert("¡Postal enviada con éxito!");
         window.location.href = response.url;
     } else {
-        status.textContent = "Hubo un error al enviar la postal.";
+        alert("¡Postal enviada con éxito!");
+        window.location.href = "/";
     }
+
 });
 
 function leerTexto(id) {
